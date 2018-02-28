@@ -1,4 +1,4 @@
-#include <DHT.h>;
+#include <DHT.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_TSL2561_U.h>
 #include <Arduino.h>
