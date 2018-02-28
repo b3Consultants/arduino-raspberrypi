@@ -50,9 +50,6 @@ void setup() {
     Serial.print("Ooops, no TSL2561 detected ... Check your wiring or I2C ADDR!");
   }
   configureSensor(); 
-  // Initialise scale
-  scale.set_scale(calibration_factor);
-  scale.tare();
 }
 
 void loop() {
@@ -85,7 +82,6 @@ void loop() {
     message = message + analogRead(8) + ":";
     message = message + analogRead(9) + ":";
     message = message + analogRead(10) + ":";
-    message = message + scale.get_units();
     
     Serial.println(message);
   }
